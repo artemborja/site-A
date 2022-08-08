@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Barbershop&#128514;</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a class="logo header__logo animate__animated animate__bounce" href="">
+          <svg class="logo__icon" width="66" height="55">
+            <use href="./img/symbol-defs.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="https://www.google.com/" class="current nav__link link"
+                >О нас</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link link">Услуги и цены</a>
+            </li>
+            <li class="nav__item">
+              <a href="#masters" class="nav__link link">Мастера</a>
+            </li>
+            <li class="nav__item">
+              <a href="https://www.google.com/" class="nav__link link"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="connect">
+          <a class="connect__tel link" href="tel:+380441111111"
+            >+38 044 111 11 11</a
+          >
+          <button type="button" class="connect__btn btn" data-modal-open>
+            онлайн-запись
+          </button>
+        </div>
+        <button type="button" class="menu-open-btn">O</button>
+      </div>
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn">x</button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item">
+                <a
+                  href="https://www.google.com/"
+                  class="current mob-menu-link link"
+                  >О нас</a
+                >
+              </li>
+              <li class="mob-menu-item">
+                <a href="" class="mob-menu-link link">Услуги и цены</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="#masters" class="mob-menu-link link">Мастера</a>
+              </li>
+              <li class="mob-menu-item">
+                <a href="https://www.google.com/" class="mob-menu-link link"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <div class="mob-connect">
+              <a class="mob-connect-tel link" href="tel:+380441111111"
+                >+38 044 111 11 11</a
+              >
+              <button type="button" class="mob-connect-btn btn" data-modal-open>
+                онлайн-запись
+              </button>
+            </div>
+            <ul class="mob-soc-list list">
+              <li class="mob-soc-item">
+                <a
+                  href="https://www.google.com/"
+                  class="mob-soc-link link"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-soc-item">
+                <a
+                  href=""
+                  class="mob-soc-link link"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="soc">
+            <ul class="soc__list list">
+              <li class="soc__item">
+                <a
+                  href="https://www.google.com/"
+                  class="soc__link link"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="soc__item">
+                <a
+                  href=""
+                  class="soc__link link"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-content">
+            <p
+              lang="en"
+              class="hero-content__top-text top-text top-text--light"
+              data-aos="fade-up"
+            >
+              A hair salon for men in Kyiv
+            </p>
+            <h1 lang="en" class="hero-content__title title--light">
+              BarberShop
+            </h1>
+            <p class="hero-content__bottom-text bottom-text">
+              Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно
+              и со вкусом.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="about">
+        <div class="container">
+          <ul class="pic-list list">
+            <li class="pic-list__item">
+              <img
+                src="./img/about-img-1.jpeg"
+                alt="барбер бреет шею"
+                width="270"
+                height="445"
+              />
+            </li>
+            <li class="pic-list__item">
+              <img
+                src="./img/about-img-2.jpeg"
+                alt="барбер делает кантик"
+                width="270"
+                height="445"
+              />
+            </li>
+          </ul>
+          <div class="about-content">
+            <p
+              class="about-content__top-text top-text top-text--dark"
+              data-aos="fade-down-left"
+            >
+              О нас
+            </p>
+            <h2 class="about-content__title title title--dark">
+              Лучший Барбершоп твоего города
+            </h2>
+            <p class="about-content__bottom-text bottom-text">
+              Если ты хочешь добавить в свой образ больше уверенности – тебе
+              точно к нам.
+            </p>
+            <p class="about-content__text">
+              Мы команда, которая никогда не останавливается на достигнутом и
+              жаждет перемен. И когда ты попадешь в руки нашего мастера, то уже
+              никогда не сможешь быть прежним. Мы команда, которая всегда с
+              клиентами "на одной волне". Поэтому, мы всегда готовы
+              усовершенствовать каждого, кто к нам приходит!
+            </p>
+            <button type="button" class="about-content__btn btn">
+              онлайн-запись
+            </button>
+          </div>
+        </div>
+      </section> -->
+      <!-- <section class="prices">
+        <div class="container">
+          <p class="prices-top-text top-text">
+            Проведи время в компании лучших мастеров
+          </p>
+          <h2 class="prices-title title" data-aos="flip-right">
+            Услуги и цены
+          </h2>
+          <div class="prices-wrap">
+            <ul class="prices-list prices-list-light list">
+              <li class="prices-item">
+                <p class="prices-item-text">Мужская стрижка</p>
+                <p class="prices-item-text">от 300 грн.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Стрижка бороды</p>
+                <p class="prices-item-text">от 200 грн.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Стрижка усов</p>
+                <p class="prices-item-text">от 200 грн.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Бритье опасной бритвой</p>
+                <p class="prices-item-text">от 200 грн.</p>
+              </li>
+            </ul>
+            <ul class="prices-list prices-list-dark list">
+              <li class="prices-item">
+                <p class="prices-item-text">Мужская стрижка</p>
+                <p class="prices-item-text">от 300 грн.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Стрижка бороды</p>
+                <p class="prices-item-text">от 200 грн.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Стрижка усов</p>
+                <p class="prices-item-text">от 200 грн.</p>
+              </li>
+              <li class="prices-item">
+                <p class="prices-item-text">Бритье опасной бритвой</p>
+                <p class="prices-item-text">от 200 грн.</p>
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="prices-btn btn">онлайн-запись</button>
+        </div>
+      </section> -->
+      <!-- <section class="benefits">
+        <div class="container">
+          <ul class="benefits-list list">
+            <li class="benefits-item">
+              <span class="benefits-item-count">600</span>
+              <p class="benefits-item-text">Довольных клиентов в день</p>
+            </li>
+            <li class="benefits-item">
+              <span class="benefits-item-count">50</span>
+              <p class="benefits-item-text">Наград за отличный сервис</p>
+            </li>
+            <li class="benefits-item">
+              <span class="benefits-item-count">20</span>
+              <p class="benefits-item-text">Лучших мастеров Киева</p>
+            </li>
+            <li class="benefits-item">
+              <span class="benefits-item-count">100</span>
+              <p class="benefits-item-text">Подарков постоянным клиентам</p>
+            </li>
+          </ul>
+          <p class="benefits-top-text top-text">Cтарая традиционная школа</p>
+          <h2 class="benefits-title title" data-aos="zoom-in-up">
+            Почему приходят именно к нам?
+          </h2>
+          <p class="benefits-bottom-text bottom-text">
+            О нас говорят только хорошее. Но лучше 1 раз увидеть и
+            прочувствовать, чем 10 раз прочитать.
+          </p>
+        </div>
+      </section> -->
+      <section id="masters" class="masters">
+        <div class="container">
+          <p class="masters__top-text top-text top-text--dark">
+            для настоящих ценителей атмосферы
+          </p>
+          <h2 class="masters__title title title--dark">Наши мастера</h2>
+          <ul class="card-list list">
+            <li class="card-list__item">
+              <div class="card-list__top-wrap">
+                <img
+                  src="./img/masters-img-1.jpeg"
+                  alt="Барбер стрежет клиента"
+                  width="370"
+                  height="346"
+                />
+                <p class="card-list__top-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem,
+                  eveniet suscipit tempore iste reprehenderit nobis eius
+                  repellendus ab quidem veniam esse, vero dolorem exercitationem
+                  tempora inventore, quisquam minus cum mollitia.
+                </p>
+              </div>
+
+              <h3 lang="en" class="card-list__item-title">John Smith</h3>
+              <p lang="en" class="card-list__item-text">Extreme Barber</p>
+              <ul class="card-list__soc-list list socials">
+                <li class="socials__item">
+                  <a href="" class="socials__link link"> </a>
+                </li>
+                <li class="socials__item">
+                  <a href="" class="socials__link link"
+                    ><svg class="socials__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="" class="socials__link link">
+                    <svg class="socials__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="" class="socials__link link"
+                    ><svg class="socials__icon" width="20" height="20">
+                      <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="card-list__item">
+              <img
+                src="./img/masters-img-2.jpeg"
+                alt="Барбер стрежет клиента"
+                width="370"
+                height="346"
+              />
+              <h3 lang="en" class="card-list__item-title">Michele Doe</h3>
+              <p lang="en" class="card-list__item-text">Extreme Barber</p>
+            </li>
+            <li class="card-list__item">
+              <img
+                src="./img/masters-img-3.jpeg"
+                alt="Барбер стрежет клиента"
+                width="370"
+                height="346"
+              />
+              <h3 lang="en" class="card-list__item-title">Alan Black</h3>
+              <p lang="en" class="card-list__item-text">Extreme Barber</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="container">
+          <p class="gallery-top-text top-text">
+            На латинском языке “барба” означает “борода”
+          </p>
+          <h2 class="visually-hidden">Галерея</h2>
+          <ul class="gallery-list list">
+            <li class="gallery-item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/gallery-img-1.jpeg    1x,
+                    ./img/gallery-img-1-2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/gallery-img-1-tab.jpeg    1x,
+                    ./img/gallery-img-1-tab-2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./img/gallery-img-1-mob.jpeg    1x,
+                    ./img/gallery-img-1-mob-2x.jpeg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./img/gallery-img-1-mob.jpeg"
+                  alt="Барбер стрежет клиента"
+                  width="418"
+                />
+              </picture>
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./img/gallery-img-2.jpeg"
+                alt="Барбер стрежет клиента"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./img/gallery-img-3.jpeg"
+                alt="Барбер стрежет клиента"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="./img/gallery-img-4.jpeg"
+                alt="Барбер стрежет клиента"
+                width="270"
+                height="360"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- <div class="contact-wrap">
+        <div class="container">
+          <section class="online">
+            <h2 class="online-title title">Онлайн-запись</h2>
+            <form class="online-form">
+              <div class="input-field">
+                <input
+                  type="text"
+                  class="online-input"
+                  name="online-name"
+                  id="online-name"
+                  placeholder=" "
+                />
+                <label for="online-name" class="online-label">Имя*</label>
+              </div>
+              <div class="input-field">
+                <input
+                  type="tel"
+                  class="online-input"
+                  name="online-tel"
+                  id="online-tel"
+                  placeholder=" "
+                />
+                <label for="online-tel" class="online-label">Телефон*</label>
+              </div>
+              <div class="text-field">
+                <textarea
+                  name="online-mess"
+                  id="online-mess"
+                  class="online-mess"
+                  placeholder=" "
+                ></textarea>
+                <label for="online-mess" class="online-label">Сообщение</label>
+              </div>
+              <button type="submit" class="online-btn btn" data-modal-open>
+                отправить
+              </button>
+            </form>
+          </section>
+          <section class="contacts">
+            <h2 class="contacts-title title">Контакты</h2>
+            <address class="contacts-address">
+              <ul class="contacts-list list">
+                <li class="contacts-item">
+                  <a
+                    href="https://goo.gl/maps/tJ6gX38e55JNDVaZ8"
+                    target="_blank"
+                    class="contacts-link link"
+                    rel="noopener nofollow noreferrer"
+                    >ул. Васильковская, 7А Киев, 08132</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a href="tel:+380441111111" class="contacts-link link"
+                    >+38 044 111 11 11</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a href="mailto:barbershop@email.com" class="contacts-link"
+                    >barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <p class="contacts-subtitle">время работы</p>
+            <p class="contacts-time">Ежедневно с 9:00 до 22:00</p>
+          </section>
+        </div>
+      </div> -->
+    </main>
+    <!-- <footer class="footer">
+      <p class="footer-copy">&copy;Copyright 2020</p>
+      <ul class="footer-list list">
+        <li class="footer-item">
+          <a
+            href="https://www.google.com/"
+            target="_blank"
+            class="footer-link link"
+            rel="noopener nofollow noreferrer"
+            >Instagram</a
+          >
+        </li>
+        <li class="footer-item">
+          <a
+            href=""
+            target="_blank"
+            class="footer-link link"
+            rel="noopener nofollow noreferrer"
+            >Youtube</a
+          >
+        </li>
+      </ul>
+    </footer> -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="masters-soc-icon" width="18" height="18">
+            <use href="./img/symbol-defs.svg#icon-close-black-18dp-2-1-1"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Заголовок модального вікна</p>
+
+        <form>
+          <div class="modal-field">
+            <label class="modal-label"> Ваше імя</label>
+            <input
+              type="text"
+              class="modal-input"
+              name="user-name"
+              placeholder="Микола"
+              required
+              minlength="2"
+            />
+          </div>
+          <div class="modal-field">
+            <label for="user-tel" class="modal-label">Ваш телефон</label>
+            <input
+              type="tel"
+              class="modal-input"
+              name="user-tel"
+              placeholder="+380 (96) 111-11-11"
+              required
+              title="+380 (96) 111-11-11"
+              id="user-tel"
+            />
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="modal-label">Ваша пошта</label>
+            <div class="input-wrap">
+              <input
+                type="email"
+                class="modal-input"
+                name="user-email"
+                placeholder="Ваша пошта"
+                id="user-email"
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./img/symbol-defs.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-text" class="modal-label">Ваш комент</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              class="modal-text"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="privacy"
+              value="true"
+              class="modal-check visually-hidden"
+              id="privacy"
+            />
+            <label for="privacy" class="check-text">
+              <!-- <span>
+                <svg class="check-icon" width="11" height="8">
+                  <use href="./img/symbol-defs.svg#icon-check"></use>
+                </svg>
+              </span> -->
+              Політика користування</label
+            >
+          </div>
+          <!-- <fieldset>
+            <legend>size</legend>
+            <label for="big">big</label>
+            <input type="radio" id="big" name="size" value="big" />
+            <label for="small">small</label>
+            <input type="radio" id="small" name="size" value="small" />
+          </fieldset>
+          <fieldset>
+            <legend>add</legend>
+            <label for="tomato">tomato</label>
+            <input type="checkbox" id="tomato" name="add" value="tomato" />
+            <label for="cheese">cheese</label>
+            <input type="checkbox" id="cheese" name="add" value="cheese" />
+            <label for="pepperoni">pepperoni</label>
+            <input
+              type="checkbox"
+              id="pepperoni"
+              name="add"
+              value="pepperoni"
+            />
+          </fieldset>
+          <label for="user-city" class="modal-label">Ваше місто</label>
+          <select name="user-city" id="user-city" class="modal-input">
+            <option value="Paris" class="opt">Paris</option>
+            <option value="London">London</option>
+            <option value="Noviy Rozdil">Noviy Rozdil</option>
+          </select> -->
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
